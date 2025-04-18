@@ -7,40 +7,47 @@ To start the development server run:
 bun run dev
 ```
 
-# Open http://localhost:3000/swagger for info on the routes
+## Swagger 
+http://localhost:3000/swagger
 
-# Order of things:
+## Order of things:
 GET - http://localhost:3000/pokemon/create-index
 GET - http://localhost:3000/pokemon/fill-index
 POST - http://localhost:3000//pokemon/search
 
-# Example bodies:
-```{
+## Example bodies:
+```
+{
     "query": "mouse"
-}```
+}
+```
 
-```{
+```
+{
   "query": "",
   "attack_min": 81,
   "attack_max": 81
-}```
+}
+```
 
-```{
+```
+{
   "query": "legendary",
   "attack_min": 81,
   "type": ["fire"]
-}```
+}
+```
 
-## Local Meilisearch
-# Install Meilisearch
+# Local Meilisearch
+## Install Meilisearch
 curl -L https://install.meilisearch.com | sh
 
-# Launch Meilisearch
+## Launch Meilisearch
 ./meilisearch
 
-# Default location
+## Default location
 http://localhost:7700/
 
 
-## Data
+# Data
 The pokemon data was taken from: https://github.com/Purukitto/pokemon-data.json/blob/master/pokedex.json
